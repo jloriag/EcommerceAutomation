@@ -27,6 +27,7 @@ public class ContactTest {
         WebElement btnW = driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/p[2]/button"));
         btnW.click();
         String currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
         assertTrue(currentUrl.contains("api.whatsapp.com/send/?"));
     }
 
